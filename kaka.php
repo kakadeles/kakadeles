@@ -1,13 +1,11 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo color("red"," ===========================\n");
-echo color("red","| Claim Voucher Gojek|\n");
-echo color("red","| Auto create Gojek X Redeem voucher |\n");
-echo color("red","| github: kumpulanremaja |\n");
-echo color("red","| fanspage :4kumpulanremaja|\n");
-echo color("red","| Creator : kumpulanremaja.com          |\n");
-echo "| Version : Premium X pertalite      |\n";
+echo color("yellow"," ===========================\n");
+echo color("yellow","| Claim Voucher|\n");
+echo color("yellow","| Auto Claim Voucher|\n");
+echo color("yellow","| github: kakadeles |\n");
+echo "| Version : NoMercy For All    |\n";
 echo "| Time    :".date('[d-m-Y] [H:i:s]')."   |\n";
 echo " ===========================\n";
 
@@ -55,47 +53,47 @@ echo " ===========================\n";
         echo color("green","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
         echo color("red","\n===========(REDEEM VOUCHER)===========");
-        echo "\n".color("yellow","!] Claim voc GOFOOD021120A");
+        echo "\n".color("yellow","!] Claim voc GOFOOD022620A");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOOD021120A"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOOD022620A"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","+] Message: ".$message);
         goto goride;
         }else{
         echo "\n".color("red","-] Message: ".$message);
-        echo "\n".color("yellow","!] Claim voc GOFOOD021120A");
+        echo "\n".color("yellow","!] Claim voc GOFOOD022620A");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
         }
         sleep(3);
-        $021120a = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOOD021120A"}');
-        $messageboba10 = fetch_value($boba10,'"message":"','"');
-        if(strpos($boba10, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("green","+] Message: ".$messageboba10);
+        $021120a = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOOD022620A"}');
+        $message022620A = fetch_value($022620A,'"message":"','"');
+        if(strpos($022620A, 'Promo kamu sudah bisa dipakai.')){
+        echo "\n".color("green","+] Message: ".$message022620A);
         goto goride;
         }else{
-        echo "\n".color("red","-] Message: ".$messageboba10);
-        echo "\n".color("yellow","!] Claim voc GOFOOD021120A");
+        echo "\n".color("red","-] Message: ".$message022620A);
+        echo "\n".color("yellow","!] Claim voc GOFOOD022620A");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
         }
         sleep(3);
-        $021120a = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOOD021120A"}');
-        $messageboba19 = fetch_value($boba19,'"message":"','"');
-        if(strpos($boba19, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("green","+] Message: ".$messageboba19);
+        $021120a = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOOD022620A"}');
+        $message022620A = fetch_value($022620A,'"message":"','"');
+        if(strpos($022620A, 'Promo kamu sudah bisa dipakai.')){
+        echo "\n".color("green","+] Message: ".$message022620A);
         goto goride;
         }else{
-        echo "\n".color("green","+] Message: ".$messageboba19);
+        echo "\n".color("green","+] Message: ".$message022620A);
         goride:
         echo "\n".color("yellow","!] Claim voc AYOCOBAGOJEK");
         echo "\n".color("yellow","!] Please wait");
