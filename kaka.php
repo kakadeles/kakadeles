@@ -75,7 +75,7 @@ echo " ===========================\n";
         sleep(1);
         }
         sleep(3);
-        $boba10 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOOD021120A"}');
+        $021120a = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOOD021120A"}');
         $messageboba10 = fetch_value($boba10,'"message":"','"');
         if(strpos($boba10, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","+] Message: ".$messageboba10);
@@ -89,7 +89,7 @@ echo " ===========================\n";
         sleep(1);
         }
         sleep(3);
-        $boba19 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOOD021120A"}');
+        $021120a = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOOD021120A"}');
         $messageboba19 = fetch_value($boba19,'"message":"','"');
         if(strpos($boba19, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","+] Message: ".$messageboba19);
